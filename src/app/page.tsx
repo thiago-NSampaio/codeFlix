@@ -1,5 +1,9 @@
 import Image from "next/image";
 import Header from "./components/Header";
+import { InformationCircleIcon } from '@heroicons/react/24/outline';
+import { PlayIcon } from '@heroicons/react/24/solid';
+
+
 export default function Home() {
   return (
     <div className='relative h-screen overflow-hidden bg-gradient-to-b lg:h-[140vh]'>
@@ -19,13 +23,12 @@ export default function Home() {
             Geralt of Rivia
           </p>
           </div>
-
           <div className='flex space-x-3'>
-            <button className='md:text-xl;flex rounded cursor-pointer items-center gap-x-2 bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:py-2.5'>
-              Play
+            <button className='md:text-xl flex rounded cursor-pointer items-center gap-x-2 bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:py-2.5'>      
+              <PlayIcon className="h-6"/> Play
             </button>
-            <button className='md:text-xl;flex rounded cursor-pointer items-center gap-x-2 bg-gray-600 px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:py-2.5'>
-              More Info
+            <button className='md:text-xl flex rounded cursor-pointer items-center gap-x-2 bg-gray-600 px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:py-2.5'>
+              <InformationCircleIcon className="h-6"/> More Info
             </button>
           </div>
       </main>
