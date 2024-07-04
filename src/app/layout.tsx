@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
 
 export const metadata: Metadata = {
   title: "CodeFlix",
@@ -14,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className='scrollbar-hide bg-black text-white'>{children}</body>
+    <html className='scrollbar-hide' lang="en">
+      <body className='bg-[#141414] text-white'>{children}</body>
     </html>
   );
 }
