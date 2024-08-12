@@ -1,5 +1,4 @@
 'use client';
-import { MagnifyingGlassIcon } from '@heroicons/react/16/solid';
 import { useScroll } from '../hooks/useScroll';
 import { Logo } from './Logo';
 import { NavLinks } from './NavLinks';
